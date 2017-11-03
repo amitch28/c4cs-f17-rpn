@@ -9,10 +9,10 @@ class TestBasics(unittest.TestCase):
 	def test_subtract(self):
 		result = rpn.caluclate("5 3 -")
 		self.assertEqual(2, result)
-    	def test_multiply(self):
-       		result = rpn.calculate("5 3 *")
-        	self.assertEqual(15, result)
+	def test_multiply(self):
+		result = rpn.calculate("5 3 *")
+		self.assertEqual(15, result)
 	def test_divide(self):
-       		result = rpn.calculate("6 3 /")
-       		self.assertEqual(2, result)
+		result = rpn.calculate("6 3 /")
+		self.assertEqual(2, result)
 
