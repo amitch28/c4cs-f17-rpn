@@ -3,7 +3,7 @@ python:
  - 3.5
 install:
  - pip install coveralls
-script: coverage run --source cookicutter -m unittest
+script: coverage run --source cookiecutter -m unittest
 
 after_success:
     coveralls
