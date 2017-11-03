@@ -3,7 +3,7 @@ python:
  - 3.5
 install:
  - pip install coveralls
-script:
- - coverage make test
+script: coverage run --source test_rpn.py test
+
 after_success:
- - coveralls
+    coveralls
