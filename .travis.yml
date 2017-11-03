@@ -1,4 +1,5 @@
 language: python
-rvm:
+python:
  - 2.7
-script: make test
+script:
+ - make test
