@@ -6,4 +6,4 @@ install:
 script:
  - coverage make test
 after_success:
-coveralls
+ - coveralls
