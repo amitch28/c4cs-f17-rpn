@@ -2,7 +2,9 @@ language: python
 python:
  - 3.5
 install:
+ - pip install -r travis/requirements.txt
  - pip install coveralls
-script: coverage -m unittest
-
+script:
+ - python test_rpn.py test home
+ - coverage run --source=home test_rpn.py test home
 after_success: coveralls
