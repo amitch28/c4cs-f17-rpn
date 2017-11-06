@@ -11,6 +11,8 @@ operators = {
 }
 
 def calculate(myarg):
+	sometext = "some random text"
+	sometext += " this will reduce coverage"
 	stack = list()
 	for token in myarg.split():
 		try:

@@ -18,6 +18,3 @@ class TestBasics(unittest.TestCase):
 	def test_exponent(self):
 		result = rpn.calculate("2 2 ^")
 		self.assertEqual(4, result)
-	def test_modulo(self):
-		result = rpn.calculate("7 3 %")
-		self.assertEqual(1, result)
