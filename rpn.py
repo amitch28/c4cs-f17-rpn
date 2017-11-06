@@ -22,7 +22,7 @@ def calculate(myarg):
 			arg1 = stack.pop()
 			result = function(arg1, arg2)
 			if result == 13:
-				print "Go Blue"	
+				print("Go Blue")	
 			stack.append(result)
 		print(stack)
 	if len(stack) != 1:
