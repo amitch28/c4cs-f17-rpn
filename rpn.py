@@ -11,8 +11,6 @@ operators = {
 }
 
 def calculate(myarg):
-	sometext = "some random text"
-	sometext += " this will reduce coverage"
 	stack = list()
 	for token in myarg.split():
 		try:
@@ -23,6 +21,8 @@ def calculate(myarg):
 			arg2 = stack.pop()
 			arg1 = stack.pop()
 			result = function(arg1, arg2)
+			if result == 13:
+				print "Go Blue"	
 			stack.append(result)
 		print(stack)
 	if len(stack) != 1:
